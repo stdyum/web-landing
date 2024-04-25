@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  gap: var(--indent5);
+}
+
+mat-icon {
+  width: 150px;
+  height: 150px;
+  font-size: 150px;
+  font-family: unset;
+}

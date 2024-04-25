@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--indent5);
+  gap: var(--indent3);
+}
+
+h1 {
+  display: grid;
+  place-items: center;
+}
+
+fb {
+  max-width: 400px;
+  width: 100%;
+}

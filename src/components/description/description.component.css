@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  padding: var(--indent5);
+  gap: var(--indent3);;
+}
+
+h1 {
+  display: grid;
+  place-items: center;
+}
+
+p {
+  font-size: var(--font-size5);
+}

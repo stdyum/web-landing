@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: var(--indent5);
+  padding: var(--indent3) 0;
+}
+
+h1 {
+  display: grid;
+  place-items: center;
+}
+
+.icons {
+  display: flex;
+  gap: var(--indent5);
+  overflow: hidden;
+}
+
+app-used-technologies-list {
+  animation: move 10s infinite linear;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--indent5)));
+  }
+}

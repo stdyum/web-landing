@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  gap: var(--indent2);
+  align-items: center;
+}
+
+mat-icon {
+  color: lime;
+  width: 42px;
+  min-width: 42px;
+  height: 42px;
+  font-size: 36px;
+}

@@ -1,0 +1,15 @@
+<h2>{{ pricing()?.period }}</h2>
+<h1>{{ pricing()?.price }}</h1>
+<p>
+  {{ pricing()?.totalPerYear }} / year
+  @if (pricing()?.discount) {
+    <span class="discount">-{{ pricing()?.discount }}</span>
+  }
+</p>
+
+@for (include of pricing()?.includes; track include) {
+  <div class="includes">
+    <mat-icon>trip_origin</mat-icon>
+    <span>{{ include }}</span>
+  </div>
+}

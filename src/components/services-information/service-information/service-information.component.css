@@ -1,0 +1,32 @@
+:host {
+  display: grid;
+  grid-template-areas: "title picture" "description picture";
+  grid-row-gap: var(--indent3);
+  grid-column-gap: calc(var(--indent5) * 2);
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: min-content 1fr;
+}
+
+h3 {
+  grid-area: title;
+}
+
+p {
+  grid-area: description;
+}
+
+img {
+  grid-area: picture;
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius5);
+  object-fit: contain;
+  place-self: center;
+}
+
+@media (max-width: 850px) {
+  :host {
+    grid-template-areas: "title" "description" "picture";
+    grid-template-columns: 1fr;
+  }
+}
