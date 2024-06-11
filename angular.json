@@ -14,7 +14,6 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "statsJson": true,
-            //todo check preserveSymlinks
             "preserveSymlinks": true,
             "outputPath": "dist/landing",
             "index": "src/index.html",

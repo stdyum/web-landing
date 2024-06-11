@@ -1,11 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PricingItem, PricingItemComponent } from './pricing-item/pricing-item.component';
+import { TranslationPipe } from '@likdan/studyum-core';
 
 @Component({
   selector: 'app-pricing',
   standalone: true,
   imports: [
     PricingItemComponent,
+    TranslationPipe
   ],
   templateUrl: './pricing.component.html',
   styleUrl: './pricing.component.css',
@@ -16,23 +18,23 @@ import { PricingItem, PricingItemComponent } from './pricing-item/pricing-item.c
 })
 export class PricingComponent {
   includes: string[] = [
-    'User management',
-    'User permissions',
-    'Schedule',
-    'Journal',
-    'Customer support',
+    'pricing_includes_user_management',
+    'pricing_includes_user_permissions',
+    'pricing_includes_user_schedule',
+    'pricing_includes_user_journal',
+    'pricing_includes_user_customer_support',
   ];
 
   pricingItems: PricingItem[] = [
     {
-      period: 'Quarter',
+      period: 'pricing_period_quarter',
       price: '$100',
       totalPerYear: '$400',
       highlight: false,
       includes: this.includes,
     },
     {
-      period: 'Semester',
+      period: 'pricing_period_semester',
       price: '$175',
       totalPerYear: '$350',
       discount: '12.5%',
@@ -40,7 +42,7 @@ export class PricingComponent {
       includes: this.includes,
     },
     {
-      period: 'Annually',
+      period: 'pricing_period_annually',
       price: '$300',
       totalPerYear: '$300',
       discount: '25%',

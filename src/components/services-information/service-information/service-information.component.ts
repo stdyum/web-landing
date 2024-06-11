@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { TranslationPipe } from '@likdan/studyum-core';
 
 export interface ServiceInformation {
   name: string,
@@ -9,7 +10,7 @@ export interface ServiceInformation {
 @Component({
   selector: 'app-service-information',
   standalone: true,
-  imports: [],
+  imports: [TranslationPipe],
   templateUrl: './service-information.component.html',
   styleUrl: './service-information.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush

@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, effect, ElementRef, inject, input } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
+import { TranslationPipe } from '@likdan/studyum-core';
 
 export interface PricingItem {
   period: string,
@@ -15,6 +16,7 @@ export interface PricingItem {
   standalone: true,
   imports: [
     MatIcon,
+    TranslationPipe,
   ],
   templateUrl: './pricing-item.component.html',
   styleUrl: './pricing-item.component.css',

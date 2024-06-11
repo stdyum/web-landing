@@ -1,19 +1,23 @@
 <div class="context-column">
   <p class="large-text">
-    Powerful web application to run your study place
+    {{'info_header' | translation}}
   </p>
 
   <p class="big-text">
-    Upload schedule, manage students, teachers and stuff, grade students and more.
+    {{'info_description' | translation}}
   </p>
 
   <div>
     <button class="register" mat-flat-button color="primary" (click)="registerStudyPlace()">
-      Register study place
+      {{'info_register_study_place_button_text' | translation}}
     </button>
     <section>
-      <button class="login" mat-flat-button color="secondary">Login as user</button>
-      <button class="signup" mat-flat-button color="primary">Sign Up as user</button>
+      <button class="login" mat-flat-button color="secondary" redirectLink="auth" url="login">
+        {{'info_signup_as_user_button_text' | translation}}
+      </button>
+      <button class="signup" mat-flat-button color="primary" redirectLink="auth" url="signup">
+        {{'info_login_as_user_button_text' | translation}}
+      </button>
     </section>
   </div>
 </div>
