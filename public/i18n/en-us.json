@@ -46,5 +46,6 @@
   "register_form_plan_quarter": "Quarter",
   "register_form_plan_semester": "Semester",
   "register_form_plan_annually": "Annually",
-  "register_form_submit": "Submit"
+  "register_form_submit": "Submit",
+  "register_info": "If you want to create an account, please follow these steps. First, create a user account. Then, using the email you provided during account creation, send a request to ‘likdan.official@gmail.com’ to join the beta program. Make sure your request includes the use case for the web application and information about your study place. During the beta access period, the web application remains free. After successful testing, you will receive an additional 3 months of free use and a 25% discount."
 }
